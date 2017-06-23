@@ -9,6 +9,7 @@
     "build": "babel ./src/react-cropper.jsx --out-file dist/react-cropper.js",
     "clean": "rimraf dist && mkdir dist",
     "prepublish": "npm run clean && npm run build",
+    "prepare": "npm run prepublish",
     "prebuild": "npm run lint",
     "build-example": "npm run build && webpack --config webpack.config.js",
     "start": "babel-node server.js"
